@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Form</title>
+    <link rel="stylesheet" href="/Form/formfill.css">
+    <style>
+        body{
+            background-color:cadetblue;
+        }
+    </style>
+    
+    
+</head>
+
+<body>
+    <center>
+    <div class="form-container">
+        <h1>College Application Form</h1>
+        <p>Please fill in the college application from below if you want to attend our institution. Thank you...!</p>
+        <hr>
+        <form action="/Form/Submition.html" method="get" id="studentform" name="studentform" onsubmit="return validateForm()">
+
+            <div class="checkbox-group">
+                <label>Title:</label>
+                <input type="radio" name="title" id="Mr">
+                <label for="Mr">Mr</label>
+                <input type="radio" name="title" id="Ms">
+                <label for="Ms">Ms</label>
+                <input type="radio" name="title" id="Mrs">
+                <label for="Mrs">Mrs</label>
+            </div>
+
+            <h3><b>Name</b></h3>
+            <input type="text" placeholder="First" name="fname" id="First" required><br><br>
+            <input type="text" placeholder="Middle" name="Mname" id="Middle" required><br><br>
+            <input type="text" placeholder="Last" name="lname" id="Last" required><br><br>
+
+            <h3><b>Date of Birth</b></h3><input type="date" name="date" id="date" required><br><br>
+
+            <div class="pnum">
+                <label for="number"><b><h3>Phone</b></h3></label>
+                <input type="number" placeholder="Mobile Number" name="pnum" id="number" required><br><br>
+            </div>
+
+            <label><h3><b>Home Address</b></h3></label>
+            <input type="text" placeholder="Street Address" id="address" required><br><br>
+            <input type="text" placeholder="City" id="City" required><br><br>
+            <input type="text" placeholder="State" id="State" required><br><br>
+            <input type="text" placeholder="ZIP Code" id="ZIPCode" required><br><br>
+            <input type="text" placeholder="Country" id="Country" required><br><br>
+
+            <label for="email"><h3><b>Email</label></b></h3>
+            <input type="email" placeholder="Enter Your Email id" name="email" id="email" required><br><br>
+
+            <label><h3><b>Please select the courses you would like to attend</b></h3></label>
+            <div class="checkbox-group">
+                <label for="Python"><h3><b>Python</b></h3></label>
+                <input type="checkbox" name="Python" id="Python">
+                <label for="JAVA"><h3><b>JAVA</b></h3></label>
+                <input type="checkbox" name="JAVA" id="JAVA">
+                <label for="HTMLCSS"><h3><b>HTML/CSS</b></h3></label>
+                <input type="checkbox" name="HTMLCSS" id="HTMLCSS">
+                <label for="Flutter"><h3><b>Flutter</b></h3></label>
+                <input type="checkbox" name="Flutter" id="Flutter">
+                <label for="Cybersecurity"><h3><b>Cybersecurity</b></h3></label>
+                <input type="checkbox" name="Cybersecurity" id="Cybersecurity">
+                <label for="GameDevelopment"><h3><b>Game Development</b></h3></label>
+                <input type="checkbox" name="GameDevelopment" id="GameDevelopment">
+            </div>
+
+            <label><p><b>If you are under 18, please complete the following section</b><p></label>
+
+            <label for="parentName"><h3><b>Name of Parent or Guardian</b></h3></label>
+            <input type="text" placeholder="First" name="parentFname" id="parentFname" required><br><br>
+            <input type="text" placeholder="Last" name="parentLname" id="parentLname" required><br><br>
+
+            <label for="parentAddress"><h3><b>Home Address (If different from yours)</b></h3></label>
+            <input type="text" placeholder="Street Address" id="parentAddress" required><br><br>
+            <input type="text" placeholder="City" id="parentCity" required><br><br>
+            <input type="text" placeholder="State" id="parentState" required><br><br>
+            <input type="text" placeholder="ZIP Code" id="parentZIPCode" required><br><br>
+            <input type="text" placeholder="Country" id="parentCountry" required><br><br>
+
+            <input type="submit" name="Send Application" class="submit-button" value="Submit Application">
+        </form>
+    </div></center>
+</body>
+<script>
+    function validateForm() {
+        var fname = document.getElementById("First").value;
+        var lname = document.getElementById("Last").value;
+        var email = document.getElementById("email").value;
+        var pnum = document.getElementById("number").value;
+
+        if (fname == "" || lname == "" || email == "" || pnum == "") {
+            alert("All fields must be filled out");
+            return false;
+        } else (alart( "Your application has been successfully submitted.")
+        return true
+    }
+</script>
+</html>

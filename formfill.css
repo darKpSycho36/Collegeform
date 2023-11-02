@@ -1,0 +1,43 @@
+<style>
+      .form-group {
+      margin-bottom: 10px;
+    }
+  </style>
+  </head>
+  <body>
+  
+  <div class="form-group">
+    <label for="option1">Option 1:</label>
+    <input type="radio" id="option1" name="option" value="option1">
+  </div>
+  
+  <div class="form-group">
+    <label for="option2">Option 2:</label>
+    <input type="radio" id="option2" name="option" value="option2">
+  </div>
+  
+  <div class="form-group">
+    <label for="option3">Option 3:</label>
+    <input type="radio" id="option3" name="option" value="option3">
+  </div>
+  
+  <div class="form-group">
+    <label for="checkbox1">Checkbox 1:</label>
+    <input type="checkbox" id="checkbox1" name="checkbox1" value="checkbox1">
+  </div>
+  
+  <div class="form-group">
+    <label for="checkbox2">Checkbox 2:</label>
+    <input type="checkbox" id="checkbox2" name="checkbox2" value="checkbox2">
+  </div>
+  
+  <div class="form-group">
+    <label for="checkbox3">Checkbox 3:</label>
+    <input type="checkbox" id="checkbox3" name="checkbox3" value="checkbox3">
+  </div>
+  
+  </body>
+  </html>
+
+  
+  
